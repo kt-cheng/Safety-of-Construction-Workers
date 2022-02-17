@@ -9,3 +9,6 @@ deep learning, object detection, time-series  model, edge computing
 
 
 ## 💡Reference
+https://ckrobotics.wordpress.com/2018/12/31/generating-coco-style-dataset/
+https://github.com/eriklindernoren/PyTorch-YOLOv3
+https://github.com/stefanopini/simple-HRNet.git
