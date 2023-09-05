@@ -6,12 +6,13 @@ from pre import pre
 from train_network import train_network
 from plot import plot_loss_and_acc
 
-X_train, y_train, X_test, y_test = pre(4, 51)
+x_train, y_train = pre(train=True, frame=4, feature=51)
+x_test, y_test = pre(train=False, frame=4, feature=51)
 
-X_train = torch.from_numpy(X_train)
+X_train = torch.from_numpy(x_train)
 y_train = torch.from_numpy(y_train)
 
-X_test = torch.from_numpy(X_test)
+X_test = torch.from_numpy(x_test)
 y_test = torch.from_numpy(y_test)
 
 X_train, y_train = X_train.type(torch.DoubleTensor), y_train.type(torch.DoubleTensor)

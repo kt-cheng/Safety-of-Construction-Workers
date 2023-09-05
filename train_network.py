@@ -20,6 +20,7 @@ def train_network(model, train_data, test_data, num_epoch, learning_rate=0.01):
         train_acc = 0
 
         model.train()
+        
         for i, (x, y) in enumerate(train_data):
             b_x = x.view(-1, 4, 51)
             b_x = b_x.float()
