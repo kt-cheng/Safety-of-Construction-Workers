@@ -13,8 +13,8 @@ def train_network(model, train_data, test_data, num_epoch, learning_rate=0.01):
     optimizer = opt.Adam(model.parameters(), lr=learning_rate)
 
     print("*******Training start*******\n")
+    
     iter = 0
-
     for epoch in range(num_epoch):
         train_loss = 0
         train_acc = 0

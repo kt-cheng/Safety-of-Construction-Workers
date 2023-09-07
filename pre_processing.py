@@ -5,7 +5,7 @@ from sklearn import preprocessing
 
 from covert import covert
 
-def preprocessing(train, frame, feature):
+def pre_processing(train, frame, feature):
     if train:
         safe = pd.read_csv('notation/safe_4frame_train.csv', header=None)
         unsafe = pd.read_csv('notation/unsafe_4frame_train.csv', header=None)

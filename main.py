@@ -2,12 +2,12 @@ import torch
 import torch.utils.data as Data
 
 from bilstm import BiLstm
-from pre import pre
+from pre_processing import pre_processing
 from train_network import train_network
 from plot import plot_loss_and_acc
 
-x_train, y_train = pre(train=True, frame=4, feature=51)
-x_test, y_test = pre(train=False, frame=4, feature=51)
+x_train, y_train = pre_processing(train=True, frame=4, feature=51)
+x_test, y_test = pre_processing(train=False, frame=4, feature=51)
 
 X_train = torch.from_numpy(x_train)
 y_train = torch.from_numpy(y_train)
