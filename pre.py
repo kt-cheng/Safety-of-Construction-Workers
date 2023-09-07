@@ -34,7 +34,7 @@ def pre(train, frame, feature):
     print('all_data_shape_reshape:', dataa.shape)
     
     # label combine
-    # safe data add labels
+    # add labels to safe data
     zero = pd.DataFrame()
     a_0 = np.zeros(len(unsafe) // frame)
     zero['label'] = a_0
